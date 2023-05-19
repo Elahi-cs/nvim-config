@@ -2,7 +2,7 @@
 
 ## New mappings
 
-**Leader has been set to <Space>**
+**Leader has been set to `<Space>`**
 
 ### Navigation
 * `<leader>pv` (project view) to open the file explorer
