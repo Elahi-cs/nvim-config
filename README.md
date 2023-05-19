@@ -19,8 +19,8 @@
 * `<leader>a` (add) to add a new buffer to the Harpoon tracker
 * `<C-e>` (edit) to view and edit the currently Harpoon-tracked buffers
 * `<C-h>` to navigate to the Harpoon-tracked buffer 1
-* `<C-j>` to navigate to the Harpoon-tracked buffer 2
-* `<C-k>` to navigate to the Harpoon-tracked buffer 3
+* `<C-n>` to navigate to the Harpoon-tracked buffer 2
+* `<C-p>` to navigate to the Harpoon-tracked buffer 3
 * `<C-l>` to navigate to the Harpoon-tracked buffer 4
 
 ### Text edition
@@ -35,13 +35,17 @@
 * `<leader>y` to yank to system clipboard
 
 ### LSP
-* `<C-p>` (previous) previous item autosuggest
-* `<C-n>` (next) next item in autosuggest
+* `<C-k>` (previous) previous item autosuggest
+* `<C-j>` (next) next item in autosuggest
 * `<C-y>` (yis) to confirm the choice
 * `<C-Space>` to autocomplete the choice
 
 * `<leader>vrr` (references) to find references in a (file? project?)
 * `<C-h>` (help) signature help
+
+### Markdown
+* `<leader>mdp` (markdown preview) to open Markdown Preview
+* `<leader>mdps` (markdown preview stop) to close Markdown Preview
 
 ## Installed packages
 
@@ -50,8 +54,8 @@
 * `:PackerSync` to download and update new packages
 
 ## TODO
-* Configure LSP keybindings
+* ~~Configure LSP keybindings~~
 * Find debugger
 * Configure fugitive
-* Change colorscheme
+* ~~Change colorscheme~~
 * Document changes

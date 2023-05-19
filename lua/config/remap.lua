@@ -19,5 +19,6 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/config/packer.lua<CR>");
 vim.keymap.set("n", "<leader>map", "<cmd>e ~/.config/nvim/lua/config/remap.lua<CR>");
-vim.keymap.set("n", "<leader>rdm", "<cmd>e ~/.config/nvim/README.md<CR>");
+vim.keymap.set("n", "<leader>rdm", "<cmd>e ~/.config/nvim/README.md<CR>")
 vim.keymap.set("n", "<leader>ec", "<cmd>Ex ~/.config/nvim/<CR>")
+
