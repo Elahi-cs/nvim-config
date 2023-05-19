@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
 	}
 
 	use({
-		'ErichDonGubler/vim-sublime-monokai',
-		as = 'sublimemonokai',
+		'rose-pine/neovim',
+		as = 'rose-pine',
 		config = function()
-			vim.cmd('colorscheme sublimemonokai')
+			vim.cmd('colorscheme rose-pine')
 		end
 	})
 
