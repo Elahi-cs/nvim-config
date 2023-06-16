@@ -8,7 +8,6 @@
 * `<leader>pv` (project view) to open the file explorer
 * `<leader>pf` (project find) to open Telescope's file finder
 * `<leader>ps` (project search) to search for a specific word inside the project
-* `<leader>vpp` (view packer) to open the Packer file
 * `<leader>map` (remap) to view the remappings file
 * `<leader>rdm` (readme) to view this file
 * `<leader>gcf` (go to config folder) to navigate to the settings folder
@@ -53,7 +52,8 @@
 * .config/nvim/init.lua (might need refactor)
 
 ## TODO
-* Find debugger
+* ~~Find debugger~~
+* Set up debugger
 * Get a file explorer
 * Configure fugitive
 * Find a way to integrate with tmux

@@ -20,7 +20,7 @@ vim.keymap.set("n", "<leader>Y", "\"+Y")
 vim.keymap.set("n", "<leader>gcf", "<cmd>Ex ~/.config/nvim/<CR>")
 
 -- Open README file
-vim.keymap.set("n", "<leader>rdm", "<cmd>e ~/.config/nvim/README.md<CR>")
+vim.keymap.set("n", "<leader>rdm", "<cmd>e ~/.config/README.md<CR>")
 
 -- Open this file
 vim.keymap.set("n", "<leader>map", "<cmd>e ~/.config/nvim/lua/settings/remap.lua<CR>")
