@@ -17,8 +17,6 @@ options.expandtab = true
 
 options.swapfile = false
 options.backup = false
-options.undodir = os.getenv("HOME") .. "/.vim/undodir"
-options.undofile = true
 
 -- Disable highlighting when searching
 options.hlsearch = false
