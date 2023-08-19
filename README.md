@@ -14,7 +14,7 @@ Entrypoint for config
 Allows you to see file edits as an n-ary tree that you can traverse to undo and redo changes.
 
 ### Harpoon
-Lets you quickly switched between buffers
+Lets you quickly switch between buffers
 
 ### Telescope
 Uses ``fzf`` to find files within the opened file's folder
