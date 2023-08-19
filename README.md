@@ -1,4 +1,6 @@
 # NVim custom config
+Packages and key remaps for my Neovim setup
+
 
 ## Installed packages
 
@@ -6,7 +8,7 @@
 Great and easy to use and configure package manager
 Entrypoint for config
 * ``.config/nvim/init.lua`` on Linux
-* ``C:/Users/[user]/AppData/Local/nvim``
+* ``C:/Users/[user]/AppData/Local/nvim`` on Windows
 
 ### Undotree
 Allows you to see file edits as an n-ary tree that you can traverse to undo and redo changes.
@@ -25,6 +27,12 @@ Lets you open a browser window with a preview of the Markdown file you're curren
 
 ### Fugitive
 Git interface for NVim
+
+### NVim-DAP [WIP]
+Debugger Adapter Protocol. Needs setting up.
+
+### Neorg
+Note-taking/journaling in a custom markdown language with file management.
 
 ### ...and more
 WIP
