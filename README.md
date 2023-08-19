@@ -1,4 +1,11 @@
 # NVim custom config
+## Installation
+### Windows
+Needs a [C/C++ compiler](https://www.freecodecamp.org/news/how-to-install-c-and-cpp-compiler-on-windows/) for Treesitter to work.
+After that just clone the repository and add the ``nvim`` folder in ``C:/Users/[user]/AppData/Local/nvim``
+
+### Linux
+Clone the repo into ``~/.config/``
 
 ## New mappings
 
