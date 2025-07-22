@@ -54,8 +54,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 -- 3) Define each server’s config
 vim.lsp.config('ruff', {
-  cmd       = { 'pyright-langserver', '--stdio' },
-  filetypes = { 'python' },
+  init_options = {
+    settings = {
+      -- Ruff language server settings go here
+    }
+  }
 })
 
 vim.lsp.config('gopls', {
@@ -70,4 +73,4 @@ vim.lsp.config('gopls', {
 })
 
 -- 4) Enable them (auto-starts on matching filetypes & root markers)
-vim.lsp.enable({ 'ruff', 'gopls' })
+vim.lsp.enable({ 'ruff', 'gopls', 'pyright' })
