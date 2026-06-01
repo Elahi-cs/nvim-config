@@ -287,9 +287,12 @@ git commit -m "Move LSP setup to lua/config/lsp.lua; fix pyright + ruff split"
 Create `lua/packages/completion.lua` (spec from the old `nvim-cmp.lua` + config from `after/plugin/cmp.lua`):
 ```lua
 -- Autocompletion: nvim-cmp with LSP, buffer, path sources and LuaSnip snippets.
+-- Loaded eagerly (not on InsertEnter) so cmp-nvim-lsp is on the runtimepath when
+-- lua/config/lsp.lua builds LSP capabilities at startup; otherwise servers attach
+-- without cmp's completion capabilities.
 return {
     "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
+    lazy = false,
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
