@@ -135,6 +135,14 @@ Keymaps (`<leader>d…`):
   and omits DAP, completion, and Mason).
 - One-line header comment in each `lua/packages/*.lua` and in `lua/config/lsp.lua` stating its job.
 
+### 5. Healthcheck script
+
+`scripts/healthcheck.sh` bundles the headless verification checks (config loads, LSP/cmp/dap
+modules load, Mason binaries present, clean startup) into a single command, so every fresh install
+can be verified in one step. It reports pass/fail per check and points to the README manual smoke
+test for the interactive behaviors (`gd`, hover, breakpoints) that can't be tested headlessly. The
+README references it in its install/verify steps.
+
 ## Out of scope
 
 - Go debugging (Delve).
@@ -151,3 +159,5 @@ Keymaps (`<leader>d…`):
 4. `after/plugin/`, nested `nvim/`, old config trees, and `test_lsp.py` are gone; each active plugin
    has a single spec file with its config inline.
 5. README and CLAUDE.md accurately describe the new layout and keymaps.
+6. `scripts/healthcheck.sh` runs all headless checks and reports `passed: 8  failed: 0` on a
+   correctly set-up install.
