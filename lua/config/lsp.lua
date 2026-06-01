@@ -28,8 +28,8 @@ vim.lsp.config("pyright", {
     },
 })
 
--- Python: ruff owns lint + format (hover disabled on attach below).
-vim.lsp.config("ruff", {})
+-- Python: ruff owns lint + format. It needs no settings overrides (nvim-lspconfig
+-- supplies the defaults) and is enabled below; its hover is disabled on attach.
 
 -- Go: existing gopls config retained.
 vim.lsp.config("gopls", {
