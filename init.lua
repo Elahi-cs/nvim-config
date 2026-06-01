@@ -23,8 +23,5 @@ require("lazy").setup({
     spec = "packages",
 })
 
--- Set colorscheme
-vim.opt.termguicolors = true
-
 -- LSP configuration (Neovim 0.11+ built-in client)
 require("config.lsp")

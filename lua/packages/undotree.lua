@@ -17,6 +17,7 @@ return {
                 end
             end,
         })
-        vim.cmd("autocmd! undotreeDetectPersistenceUndo")
+        -- Guard: the group only exists after undotree sources its autoload; ignore if absent.
+        pcall(vim.cmd, "autocmd! undotreeDetectPersistenceUndo")
     end,
 }

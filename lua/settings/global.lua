@@ -18,7 +18,9 @@ options.expandtab = true
 options.swapfile = false
 options.backup = false
 options.undofile = true
-options.undodir = vim.fn.stdpath("data") .. "/.undo"
+local undodir = vim.fn.stdpath("data") .. "/.undo"
+options.undodir = undodir
+vim.fn.mkdir(undodir, "p") -- ensure the dir exists so undofile actually persists
 
 -- Disable highlighting when searching
 options.hlsearch = false
