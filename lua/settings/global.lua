@@ -17,6 +17,8 @@ options.expandtab = true
 
 options.swapfile = false
 options.backup = false
+options.undofile = true
+options.undodir = vim.fn.stdpath("data") .. "/.undo"
 
 -- Disable highlighting when searching
 options.hlsearch = false

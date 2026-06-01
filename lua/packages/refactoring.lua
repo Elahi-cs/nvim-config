@@ -4,12 +4,13 @@ return {
         "nvim-lua/plenary.nvim",
         "nvim-treesitter/nvim-treesitter",
     },
+    enabled = false, -- Temporarily disabled due to PowerShell module error
+    event = "VeryLazy",
     config = function()
         require('refactoring').setup({
             prompt_func_return_type = {
                 go = false,
                 java = false,
-
                 cpp = false,
                 c = false,
                 h = false,
@@ -19,7 +20,6 @@ return {
             prompt_func_param_type = {
                 go = false,
                 java = false,
-
                 cpp = false,
                 c = false,
                 h = false,
@@ -28,7 +28,7 @@ return {
             },
             printf_statements = {},
             print_var_statements = {},
-            show_success_message = false, -- shows a message with information about the refactor on success
-            -- i.e. [Refactor] Inlined 3 variable occurrences
-        })  end,
-    }
+            show_success_message = false,
+        })
+    end,
+}
