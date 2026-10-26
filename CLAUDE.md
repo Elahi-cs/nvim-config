@@ -25,10 +25,11 @@ This is a personal Neovim configuration using lazy.nvim as the package manager. 
 ### LSP Configuration
 - Neovim 0.11+ built-in LSP, configured in `lua/config/lsp.lua` (not inline in init.lua)
 - `nvim-lspconfig` supplies per-server defaults (cmd/filetypes/root_dir); `lua/config/lsp.lua` overrides capabilities + settings and calls `vim.lsp.enable()`
-- Server binaries (pyright, ruff, debugpy) are installed via Mason (`lua/packages/mason.lua`)
+- Server binaries (pyright, ruff, debugpy, clangd) are installed via Mason (`lua/packages/mason.lua`)
 - Python: pyright provides definitions/hover/types; ruff provides lint/format (its hover is disabled)
 - Shared root markers: `.git`, `go.mod`, `pyproject.toml`
-- Enabled servers: pyright, ruff, gopls
+- C/C++: clangd (background index + clang-tidy); uses compile_commands.json when present
+- Enabled servers: pyright, ruff, gopls, clangd
 
 ### Key Leader Mappings
 - Leader key: `<Space>`
@@ -47,7 +48,7 @@ This is a personal Neovim configuration using lazy.nvim as the package manager. 
 - Linux: Clone repo to `~/.config/nvim/`
 - Windows: Place `nvim` folder in `C:/Users/[user]/AppData/Local/nvim`
 - `install.sh` script clones to `$HOME/.test_config` for testing
-- On first launch, Mason installs pyright/ruff/debugpy automatically
+- On first launch, Mason installs pyright/ruff/debugpy/clangd automatically
 
 ### Plugin Management
 - Add new plugins by creating files in `lua/packages/` that return plugin specs

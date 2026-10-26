@@ -31,6 +31,7 @@ check "dap modules load"            "$NVIM" --headless "+Lazy! load nvim-dap" "+
 check "pyright-langserver present"  test -x "$DATA/mason/bin/pyright-langserver"
 check "ruff present"                test -e "$DATA/mason/bin/ruff"
 check "debugpy present"             test -x "$DATA/mason/packages/debugpy/venv/bin/python"
+check "clangd present"              test -e "$DATA/mason/bin/clangd"
 check "clean startup"               "$NVIM" --headless "+lua print('ok')" +qa
 
 echo

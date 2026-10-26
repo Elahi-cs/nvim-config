@@ -41,6 +41,13 @@ vim.lsp.config("gopls", {
     },
 })
 
+-- C/C++: clangd. nvim-lspconfig's defaults cover cmd/filetypes and its own
+-- root markers (compile_commands.json, .clangd, ...). For multi-file projects,
+-- generate compile_commands.json (e.g. `bear -- make`) so clangd sees your flags.
+vim.lsp.config("clangd", {
+    cmd = { "clangd", "--background-index", "--clang-tidy", "--header-insertion=never" },
+})
+
 -- Keymaps + ruff/pyright hover split, applied when any server attaches.
 vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("UserLspConfig", {}),
@@ -64,4 +71,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
-vim.lsp.enable({ "pyright", "ruff", "gopls" })
+vim.lsp.enable({ "pyright", "ruff", "gopls", "clangd" })

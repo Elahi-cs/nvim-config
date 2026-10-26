@@ -10,14 +10,16 @@ nvim   # lazy.nvim bootstraps and installs plugins on first launch
 ```
 
 On the first launch, Mason installs the LSP/debug binaries (pyright, ruff,
-debugpy) asynchronously in the background. This can take a minute, and a slow
+debugpy, clangd) asynchronously in the background. This can take a minute, and a slow
 machine may need a second `nvim` start (or `:MasonToolsInstall`) to finish.
 
 ### Prerequisites
 - Neovim 0.11+
 - `node` (runtime for pyright) and system `python3`
 - `go` toolchain with `gopls` on PATH (for Go LSP)
-- LSP/debug binaries (pyright, ruff, debugpy) are installed automatically by Mason.
+- A C compiler (`gcc`/`clang`) and `make` for C builds; for multi-file C projects
+  generate `compile_commands.json` (e.g. `bear -- make`) so clangd knows your flags
+- LSP/debug binaries (pyright, ruff, debugpy, clangd) are installed automatically by Mason.
 
 ### Verify the install
 ```bash

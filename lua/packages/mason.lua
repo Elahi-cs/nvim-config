@@ -12,6 +12,7 @@ return {
                 "pyright",  -- Python type-checking / definitions / hover
                 "ruff",     -- Python lint + format
                 "debugpy",  -- Python debug adapter
+                "clangd",   -- C/C++ language server
             },
             run_on_start = true,
         })

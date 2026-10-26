@@ -9,7 +9,7 @@ return {
     build = ":TSUpdate",
     config = function()
         local ts = require("nvim-treesitter")
-        ts.install({ "javascript", "json", "lua", "vim", "python", "vimdoc", "query" })
+        ts.install({ "javascript", "json", "lua", "vim", "python", "c", "vimdoc", "query" })
 
         -- Start highlighting on every filetype with a parser, installing missing
         -- parsers on first use (replaces the old `auto_install` option).
