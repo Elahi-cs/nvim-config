@@ -17,6 +17,7 @@ machine may need a second `nvim` start (or `:MasonToolsInstall`) to finish.
 - Neovim 0.11+
 - `node` (runtime for pyright) and system `python3`
 - `go` toolchain with `gopls` on PATH (for Go LSP)
+- `tree-sitter` CLI 0.26.1+ on PATH (nvim-treesitter compiles parsers with it; not from npm)
 - A C compiler (`gcc`/`clang`) and `make` for C builds; for multi-file C projects
   generate `compile_commands.json` (e.g. `bear -- make`) so clangd knows your flags
 - LSP/debug binaries (pyright, ruff, debugpy, clangd) are installed automatically by Mason.
